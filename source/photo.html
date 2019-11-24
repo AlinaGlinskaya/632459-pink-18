@@ -17,7 +17,7 @@
             <button class="main-nav__toggle" type="button">Открыть меню</button>
             <ul class="main-nav__list site-list">
                 <li class="site-list__item site-list__item--active">
-                    <a>Главная</a>
+                    <a href="index.html">Главная</a>
                 </li>
                 <li class="site-list__item">
                     <a href="photo.html">Фотографии</a>
@@ -49,8 +49,7 @@
                     </a>
                     <b class="photo__author">Анна</b>
                     <span class="photo__date">(5 минут назад)</span>
-                    <p class="photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
-                        трансляцию в перископе, задавайте свои вопросы!
+                    <p class="photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
                     </p>
                     <a class="button photo__likes" href="#">Нравится: 215</a>
                 </li>
@@ -111,6 +110,30 @@
                     <a class="button photo__likes" href="#">Нравится: 2560</a>
                 </li>
             </ul>
+        </section>
+
+        <section class="posting">
+            <h2 class="visually-hidden">Добавить фото</h2>
+            <p class="posting__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне</p>
+            <form class="posting__form" action="https://echo.htmlacademy.ru" method="post">
+                <img class="posting__photo" src="https://via.placeholder.com/280x375" width="280" height="375" alt="Фотография">
+                <ul class="posting__tools">
+                    <li class="controls posting__controls-active">
+                        <span class="controls__item controls__item-size"></span>
+                        <span class="controls__scale"></span>
+                    </li>
+                    <li class="controls posting__controls">
+                            <span class="controls__item controls__item-color"></span>
+                            <span class="controls__scale"></span>
+                    </li>
+                    <li class="controls posting__controls">
+                            <span class="controls__item controls__item-brightness"></span>
+                            <span class="controls__scale"></span>
+                    </li>
+                </ul>
+                <input class="posting__button posting__button-submit" type="submit" value="Запостить">
+                <input class="posting__button posting__button-reset" type="reset" value="Отмена">
+            </form>
         </section>
 
     </main>
