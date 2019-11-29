@@ -1,0 +1,61 @@
+.photo-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+
+  list-style: none;
+}
+
+.photo-list__img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.photo-list__item {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  background-color: #f2f2f2;
+}
+
+.photo__date {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.photo__comment {
+  margin: 0;
+  padding-left: 10px;
+
+  font-weight: 300;
+}
+
+.photo__author {
+  padding-left: 10px;
+}
+
+.photo__likes {
+  display: block;
+  position: relative;
+  margin-top: 15px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+
+  font-size: 12px;
+  text-decoration: none;
+  color: #d43560;
+  text-transform: uppercase;
+
+  &::before {
+    content: url("../../img/icon-heart.svg");
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 20px;
+  }
+}
