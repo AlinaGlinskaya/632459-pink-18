@@ -10,10 +10,13 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
+
+  &--of-day {
+    margin-left: -20px;
+  }
 }
 
 .photo-list__item {
-  display: block;
   width: 280px;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -28,22 +31,17 @@
 }
 
 .photo__comment {
-  margin: 0;
-  padding-left: 10px;
-
   font-weight: 300;
 }
 
-.photo__author {
-  padding-left: 10px;
+.photo__caption {
+  padding: 10px;
 }
 
 .photo__likes {
   display: block;
   position: relative;
-  margin-top: 15px;
-  padding-left: 50px;
-  padding-bottom: 20px;
+  padding-left: 30px;
 
   font-size: 12px;
   text-decoration: none;
@@ -56,6 +54,6 @@
     width: 20px;
     height: 20px;
     top: 0;
-    left: 20px;
+    left: 5px;
   }
 }
