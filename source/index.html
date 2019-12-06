@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -37,27 +38,28 @@
     <h1 class="visually-hidden">Приложение Пинк</h1>
 
     <section class="download">
+      <div class="download__wrapper">
       <h2 class="visually-hidden">Загрузить приложение</h2>
-      <span class="download__slogan">Взгляните на жизнь иначе!</span>
+      <div class="download__slogan">Взгляните на жизнь иначе!</div>
       <a class="download__button button" href="#">Скачать приложение</a>
       <ul class="download__list">
         <li class="download__item">
-          <a class="download__link download__link-ios" href="#"></a>
+          <a class="download__link download__link--ios" href="#"></a>
         </li>
         <li class="download__item">
-          <a class="download__link download__link-android" href="#"></a>
+          <a class="download__link download__link--android" href="#"></a>
         </li>
         <li class="download__item">
-          <a class="download__link download__link-windows" href="#"></a>
+          <a class="download__link download__link--windows" href="#"></a>
         </li>
       </ul>
       <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
     </section>
 
     <section class="features">
       <h2 class="visually-hidden">Преимущества приложения Пинк</h2>
-      <span class="features__slogan">Устали от серости мегаполиса?</span>
-      <span class="features__slogan">Нам есть, что вам предложить!</span>
+      <div class="features__slogan">Устали от серости мегаполиса?<br><br>Нам есть, что вам предложить!</div>
       <ul class="features__list">
         <li class="features__item">
           <h3 class="features__title">Поднимает настроение</h3>
@@ -91,12 +93,20 @@
       <h2 class="visually-hidden">Тарифы</h2>
       <table class="tariff__table">
         <tr>
-          <th class="tariff__name-hit">
-            <b>Стандарт</b> 3,99 USD
+          <th class="tariff__name tariff__name--hit">
+            <b>Стандарт</b><br>
+            <span class="tariff__price">3,99 USD</span>
           </th>
-          <td class="tariff__options tariff__options-check">Розовый фильтр</td>
-          <td class="tariff__options tariff__options-check">Смайлики</td>
-          <td class="tariff__options tariff__options-cross">Комментарии</td>
+        </tr>
+          <tr>
+          <td class="tariff__options tariff__options--check">Розовый фильтр</td>
+          </tr>
+          <tr>
+          <td class="tariff__options tariff__options--check">Смайлики</td>
+          </tr>
+          <tr>
+          <td class="tariff__options tariff__options--cross">Комментарии</td>
+          </tr>
         </tr>
       </table>
     </section>
@@ -109,24 +119,24 @@
       <ul class="contacts__list">
         <li class="contacts__item">
           <p class="contacts__text">
-            <b>Звоните:</b>
+            <b>Звоните:</b><br>
             <a class="contacts__details" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </p>
         </li>
         <li class="contacts__item">
           <p class="contacts__text">
-            <b>Пишите:</b>
+            <b>Пишите:</b><br>
             <a class="contacts__details" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
         </li>
         <li class="contacts__item">
           <p class="contacts__text">
-            <b>Приезжайте в гости:</b>
+            <b>Приезжайте в гости:</b><br>
             <span class="contacts__details">ул. Большая Конюшенная, 19/8</span>
           </p>
         </li>
       </ul>
-      <img class="contacts__map" src="https://via.placeholder.com/320x200" width="320" height="200" alt="Организация находится по адресу ул. Большая Конюшенная, 19/8">
+      <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Организация находится по адресу ул. Большая Конюшенная, 19/8">
     </section>
   </main>
 

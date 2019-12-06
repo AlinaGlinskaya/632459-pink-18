@@ -1,0 +1,70 @@
+.posting__form {
+  background-color: #f2f2f2;
+}
+
+.posting__text {
+  padding: 0 20px;
+
+  color: #283645;
+  text-align: center;
+}
+
+.posting__photo {
+  padding: 20px;
+  width: 100%;
+}
+
+.posting__tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 50px;
+
+  list-style: none;
+}
+
+.posting__item {
+  width: 70px;
+  height: 70px;
+
+  &--size {
+    background-image: url("../../img/icon-editor-crop.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--color {
+    background-image: url("../../img/icon-editor-fill.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--brightness {
+    background-image: url("../../img/icon-editor-contrast.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.posting__button {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  padding: 15px;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+
+  border-radius: 35px;
+  background-color: #ffffff;
+
+  &--submit {
+    color: #d22856;
+    border: 3px solid #d22856;
+  }
+
+  &--reset {
+    color: #dddfe0;
+    border: 3px solid #dddfe0;
+  }
+}

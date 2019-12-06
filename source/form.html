@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -32,13 +33,15 @@
     </nav>
   </header>
 
-  <main class="form-page">
+  <main class="page-main">
 
-    <h1 class="form-page__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <div class="form-page__wrapper">
+      <h1 class="form-page__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
 
     <section class="form">
       <h2 class="visually-hidden">Анкета участника конкурса</h2>
-      <p class="contest__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+      <p class="form__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       <form class="form-contest" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form-contest__fullname">
           <label class="form-text" for="surname">Фамилия</label>
@@ -64,9 +67,9 @@
           <input class="checkbox" type="checkbox" name="checkbox-item" id="crush">
         </fieldset>
         <fieldset class="form-contest__contacts">
-          <label class="form-text" for="phone"></label>
+          <label class="form-text" for="phone">Номер телефона</label>
           <input class="text-field" type="text" name="contacts" id="phone" placeholder="Номер, пожалуйста">
-          <label class="form-text" for="email"></label>
+          <label class="form-text" for="email">Адрес почты</label>
           <input class="text-field" type="text" name="contacts" id="email" placeholder="Введите почту" required>
         </fieldset>
         <fieldset class="form-contest__app">
@@ -82,8 +85,8 @@
           <legend class="form-text">Опишите свои эмоции</legend>
           <textarea class="form-contest__review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <input class="form-contest__submit" type="submit" value="Отправить форму">
-        <span class="form-contest__required"><sup>*</sup> - обязательные поля</span>
+        <button class="form-contest__submit" type="submit">Отправить форму</button>
+        <div class="form-contest__required"><sup>*</sup> - обязательные поля</div>
       </form>
     </section>
 

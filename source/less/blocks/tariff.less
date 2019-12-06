@@ -1,0 +1,57 @@
+.tariff__table {
+  margin: 0 auto;
+
+  text-transform: uppercase;
+
+  border-collapse: collapse;
+}
+
+.tariff__name {
+  padding: 22px 90px;
+
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #283645;
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+}
+
+.tariff__options {
+  position: relative;
+  padding: 15px 25px;
+
+  color: #283645;
+
+  border: 2px solid #e5e5e5;
+
+  &--check::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    left: 220px;
+
+    background-image: url("../../img/icon-yes.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--cross::after {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 30px;
+    top: 20px;
+    left: 220px;
+
+    background-image: url("../../img/icon-no.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.tariff__price {
+  font-size: 24px;
+  font-weight: 300;
+}
