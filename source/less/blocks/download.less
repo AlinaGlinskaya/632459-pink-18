@@ -5,12 +5,12 @@
 }
 
 .download__wrapper {
-  width: 100%;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .download__slogan {
-  min-height: 370px;
   width: 270px;
   margin: 0 auto;
   padding-top: 20px;
@@ -18,6 +18,15 @@
   font-size: 24px;
   font-weight: 300;
   text-align: center;
+}
+
+.download__picture {
+  width: 258px;
+  height: 286px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   background-image: url("../../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
@@ -25,7 +34,6 @@
 }
 
 .download__button {
-  display: block;
   width: 281px;
   margin: 0 auto;
   padding-left: 36px;
@@ -33,11 +41,9 @@
   padding-top: 16px;
   padding-bottom: 17px;
 
-  font-size: 18px;
+  color: #ffffff;
   font-weight: bold;
   line-height: 1;
-  text-decoration: none;
-  color: #ffffff;
 
   border: 3px solid #ffffff;
   border-radius: 35px;
@@ -45,10 +51,10 @@
 
 .download__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-left: 56px;
-  margin-right: 56px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   margin-top: 32px;
 
@@ -67,6 +73,7 @@
 
 .download__link {
   display: block;
+  margin-right: 30px;
 
   &--ios {
     width: 47px;

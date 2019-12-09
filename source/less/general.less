@@ -1,13 +1,12 @@
 body {
+  min-width: 320px;
+  margin: 0;
+
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
   line-height: 30px;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -18,7 +17,16 @@ body {
   margin: -1px;
 }
 
-.page-main {
-  min-width: 320px;
-  margin: 0;
+input,
+textarea {
+  font: inherit;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
