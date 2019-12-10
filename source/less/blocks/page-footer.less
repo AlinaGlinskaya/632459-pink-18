@@ -2,6 +2,10 @@
   margin-top: 20px;
 
   background-color: #ffffff;
+
+  &--index {
+    display: none;
+  }
 }
 
 .page-footer__logo {
@@ -13,4 +17,28 @@
 .page-footer__logo-wrapper {
   width: 200px;
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer--index {
+    display: block;
+  }
+
+  .page-footer {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer--index {
+    display: block;
+  }
+
+  .page-footer {
+    display: flex;
+  }
+
+  .page-footer__logo-wrapper {
+    margin-left: 120px;
+  }
 }

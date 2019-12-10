@@ -26,3 +26,23 @@
   border-bottom: 1px solid #000000;
   border-top: 1px solid #485461;
 }
+
+@media (min-width: @desktop-width) {
+  .site-list {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 820px;
+  }
+
+  .site-list__item {
+    border: none;
+  }
+
+  .site-list__link {
+    height: 110px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
