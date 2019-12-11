@@ -21,16 +21,15 @@
 }
 
 .download__picture {
-  width: 258px;
-  height: 286px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 290px;
+  padding-right: 40px;
 
-  background-image: url("../../img/iphone-hand-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 50% 80%;
+  text-align: center;
 }
 
 .download__button {
@@ -61,6 +60,10 @@
   margin-top: 32px;
 
   list-style: none;
+}
+
+.download__details {
+  background-color: #283645;
 }
 
 .download__text {
@@ -98,5 +101,49 @@
 
     background-image: url("../../img/logo-microsoft.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download__wrapper {
+    position: relative;
+
+    background-image: none;
+  }
+
+  .download {
+    background-color: transparent;
+  }
+
+  .download__picture {
+    position: absolute;
+    top: 20px;
+    right: 10vw;
+
+    width: 500px;
+    height: 610px;
+    padding-right: 0;
+  }
+
+  .download__description {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin-left: 120px;
+    margin-top: 100px;
+  }
+
+  .download__slogan {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .download__button {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .download__details {
+    background-color: transparent;
   }
 }
