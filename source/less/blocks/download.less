@@ -104,6 +104,34 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .download__wrapper {
+    min-height: 620px;
+
+    background:
+     url("../../img/bg-back-tablet@1x.jpg") 0 0 no-repeat cover,
+     url("../../img/iphone-hand-tablet@1x.png");
+  }
+
+  .download__description {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin-left: 120px;
+    margin-top: 50px;
+  }
+
+  .download__details {
+    margin-top: 30px;
+
+    background-color: transparent;
+  }
+
+  .download__picture {
+    display: none;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .download__wrapper {
     position: relative;
@@ -118,7 +146,7 @@
   .download__picture {
     position: absolute;
     top: 20px;
-    right: 10vw;
+    right: 10%;
 
     width: 500px;
     height: 610px;

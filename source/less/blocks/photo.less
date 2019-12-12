@@ -22,6 +22,10 @@
   margin-bottom: 20px;
 
   background-color: #f2f2f2;
+
+  &--of-day img {
+    width: 320px;
+  }
 }
 
 .photo__date {
@@ -80,11 +84,17 @@
 
   .photo-list__item {
     width: 300px;
+
+    &--of-day,
+    &--of-day img {
+    width: 620px;
+    }
   }
 }
 
+
 @media (min-width: @desktop-width) {
-  .photo-list {
-    width: 960px;
-  }
+  .photo-list__item {
+   width: 940px;
+}
 }
