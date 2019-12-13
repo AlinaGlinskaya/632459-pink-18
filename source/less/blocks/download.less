@@ -22,12 +22,9 @@
 
 .download__picture {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 290px;
-  padding-right: 40px;
+  height: 286px;
+  margin-right: 50px;
+  margin-top: 20px;
 
   text-align: center;
 }
@@ -52,6 +49,7 @@
 
 .download__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-left: auto;
@@ -62,8 +60,12 @@
   list-style: none;
 }
 
+.download__item {
+  margin: 0 15px;
+}
+
 .download__details {
-  background-color: #283645;
+  background-color: #1d2631;
 }
 
 .download__text {
@@ -78,7 +80,6 @@
 
 .download__link {
   display: block;
-  margin-right: 30px;
 
   &--ios {
     width: 47px;
@@ -108,9 +109,8 @@
   .download__wrapper {
     min-height: 620px;
 
-    background:
-      url("../../img/bg-back-tablet@1x.jpg") 0 0 no-repeat cover,
-      url("../../img/iphone-hand-tablet@1x.png");
+    background: url("../../img/bg-back-tablet@1x.jpg") no-repeat cover,
+    url("../../img/iphone-hand-tablet@1x.png") no-repeat contain;
   }
 
   .download__description {
@@ -118,7 +118,6 @@
     flex-direction: column;
     width: 380px;
     margin-left: 120px;
-    margin-top: 50px;
   }
 
   .download__details {
@@ -145,12 +144,17 @@
 
   .download__picture {
     position: absolute;
-    top: 20px;
+    bottom: 40px;
     right: 10%;
 
-    width: 500px;
-    height: 610px;
-    padding-right: 0;
+    display: block;
+    height: auto;
+    margin: 0;
+  }
+
+  .download__image {
+    width: 560px;
+    height: 650px;
   }
 
   .download__description {

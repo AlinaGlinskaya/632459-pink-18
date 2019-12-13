@@ -7,10 +7,7 @@
 
 .site-list__link {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 15px 20px 15px;
 
   font-size: 18px;
   line-height: 32px;
@@ -22,7 +19,6 @@
 }
 
 .site-list__item {
-  height: 65px;
   border-bottom: 1px solid #000000;
   border-top: 1px solid #485461;
 }
@@ -31,7 +27,9 @@
   .site-list {
     display: flex;
     flex-wrap: wrap;
-    min-width: 820px;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 600px;
   }
 
   .site-list__item {
@@ -39,10 +37,9 @@
   }
 
   .site-list__link {
-    height: 110px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 10px 20px;
+
+    text-transform: none;
+    font-weight: 300;
   }
 }
