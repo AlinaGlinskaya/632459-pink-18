@@ -4,6 +4,10 @@
   color: #ffffff;
 }
 
+.download .container {
+  padding: 0;
+}
+
 .download__wrapper {
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -80,28 +84,25 @@
 
 .download__link {
   display: block;
+  width: 50px;
+  height: 60px;
+
+  background-repeat: no-repeat;
+  background-position: center;
 
   &--ios {
-    width: 47px;
-    height: 56px;
     background-image: url("../../img/logo-apple.svg");
-    background-repeat: no-repeat;
+    background-size: 47px 56px;
   }
 
   &--android {
-    width: 43px;
-    height: 47px;
-
     background-image: url("../../img/logo-android.svg");
-    background-repeat: no-repeat;
+    background-size: 43px 47px;
   }
 
   &--windows {
-    width: 44px;
-    height: 43px;
-
     background-image: url("../../img/logo-microsoft.svg");
-    background-repeat: no-repeat;
+    background-size: 44px 43px;
   }
 }
 
@@ -109,15 +110,22 @@
   .download__wrapper {
     min-height: 620px;
 
-    background: url("../../img/bg-back-tablet@1x.jpg") no-repeat cover,
-    url("../../img/iphone-hand-tablet@1x.png") no-repeat contain;
+    background: url("../../img/bg-back-tablet@1x.jpg") no-repeat cover;
   }
 
   .download__description {
+    position: relative;
+    z-index: 0;
+
     display: flex;
     flex-direction: column;
-    width: 380px;
-    margin-left: 120px;
+    width: 318px;
+    padding-top: 103px;
+  }
+
+  .download__image {
+    width: 500px;
+    height: 570px;
   }
 
   .download__details {
@@ -126,26 +134,51 @@
     background-color: transparent;
   }
 
+  .download__slogan {
+    width: 186px;
+
+    font-size: 40px;
+    line-height: 50px;
+  }
+
   .download__picture {
-    display: none;
+    position: absolute;
+    z-index: -1;
+    left: 135px;
+    top: 50px;
+
+    height: auto;
+    margin: 0;
+  }
+
+  .download__text {
+    padding: 0;
+    margin: 0;
+    width: 318px;
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
   }
 }
 
 @media (min-width: @desktop-width) {
   .download__wrapper {
-    position: relative;
+    padding-top: 210px;
 
-    background-image: none;
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .download {
-    background-color: transparent;
+    margin-top: -110px;
   }
 
   .download__picture {
     position: absolute;
-    bottom: 40px;
-    right: 10%;
+    top: -38px;
+    left: 500px;
 
     display: block;
     height: auto;
@@ -158,14 +191,19 @@
   }
 
   .download__description {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 104px;
+
     display: flex;
     flex-direction: column;
     width: 380px;
-    margin-left: 120px;
-    margin-top: 100px;
+    margin-left: 50px;
   }
 
   .download__slogan {
+    width: 231px;
+
     font-size: 50px;
     line-height: 60px;
   }
@@ -177,5 +215,10 @@
 
   .download__details {
     background-color: transparent;
+  }
+
+  .download__text {
+    width: 380px;
+    margin: 0;
   }
 }
