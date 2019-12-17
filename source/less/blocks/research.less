@@ -1,11 +1,17 @@
 .research {
   display: none;
-  margin-top: 50px;
+}
+
+.research__details {
+  display: flex;
 }
 
 .research__description {
-  margin-left: 60px;
-  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 45px;
+
+  line-height: 24px;
 }
 
 .research__picture {
@@ -13,11 +19,16 @@
 }
 
 .research__title {
+  width: 170px;
+  margin-bottom: 5px;
+
   font-size: 30px;
-  line-height: 32px;
+  line-height: 36px;
 }
 
 .research__text {
+  width: 296px;
+
   color: #283645;
   line-height: 24px;
 }
@@ -28,32 +39,22 @@
 
 @media (min-width: @tablet-width) {
   .research {
-    display: flex;
-    width: 625px;
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
   }
 
   .research__picture {
-    width: 240px;
-    height: 280px;
+    width: 238px;
+    height: 276px;
   }
 
-  .research__title {
-    width: 180px;
-  }
-
-  .research__description {
-    min-width: 330px;
+  .research__wrapper {
+    margin-top: 50px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .research {
-    display: flex;
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
   }
 
   .research__picture {
@@ -65,13 +66,30 @@
     width: 310px;
   }
 
-  .research__description {
-    max-width: 550px;
-  }
-
   .research__text,
   .research__link {
     font-size: 18px;
     line-height: 28px;
+  }
+
+  .research__wrapper {
+    width: 100%;
+    margin-top: 0;
+    padding-top: 50px;
+
+    background-color: #f2f2f2;
+  }
+
+  .research__text {
+    width: 525px;
+  }
+
+  .research__description {
+    margin-left: 0;
+    margin-right: 50px;
+  }
+
+  .research__details {
+    justify-content: space-around;
   }
 }
