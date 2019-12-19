@@ -7,9 +7,7 @@
 
 .site-list__link {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
-
+  padding: 15px 20px 15px;
 
   font-size: 18px;
   line-height: 32px;
@@ -21,7 +19,32 @@
 }
 
 .site-list__item {
-  height: 65px;
   border-bottom: 1px solid #000000;
   border-top: 1px solid #485461;
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 70px;
+  }
+
+  .site-list__item {
+    margin: 0 30px;
+
+    border: none;
+  }
+
+  .site-list__item:last-of-type {
+    margin-right: 0;
+  }
+
+  .site-list__link {
+    padding: 10px 20px;
+
+    text-transform: none;
+    font-weight: 300;
+  }
 }
