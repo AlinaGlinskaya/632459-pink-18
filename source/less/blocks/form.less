@@ -45,3 +45,118 @@
   background-color: #2aab6d;
   border: none;
 }
+
+.form-contest__contacts legend {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .form-contest__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .form-contest__achievements,
+  .form-contest__app,
+  .form-contest__contacts,
+  .form-contest__comment {
+    margin-bottom: 20px;
+
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+  }
+
+  .form-contest__submit {
+    width: 296px;
+  }
+
+  .form-contest__required {
+    width: 196px;
+
+    text-transform: uppercase;
+  }
+
+  .form-contest__fullname .form-contest__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .form-contest__fullname label {
+    margin-right: 10px;
+  }
+
+  .form-contest__app .form-contest__item,
+  .form-contest__achievements .form-contest__item {
+    height: 50px;
+    padding: 10px 50px;
+  }
+
+  .form-contest__comment {
+    padding: 30px 60px;
+  }
+
+  .form-contest__contacts legend {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-contest__achievements,
+  .form-contest__app,
+  .form-contest__contacts,
+  .form-contest__comment {
+    margin-bottom: 20px;
+
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+  }
+
+  .form-contest {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-contest__app {
+    order: -1;
+    width: 431px;
+  }
+
+  .form-contest__app .form-contest__item,
+  .form-contest__achievements .form-contest__item {
+    height: 50px;
+    padding: 10px 50px;
+  }
+
+  .form-contest__achievements,
+  .form-contest__contacts,
+  .form-contest__comment,
+  .form-contest__buttons {
+    width: 940px;
+  }
+
+  .form-contest__fullname {
+    order: -1;
+    width: 450px;
+  }
+
+  .form-contest__fullname .form-contest__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .form-contest__fullname label {
+    margin-right: 10px;
+  }
+
+  .form-contest__contacts legend {
+    display: block;
+  }
+
+  .form-contest__comment {
+    padding: 30px 60px;
+  }
+}
