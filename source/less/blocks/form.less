@@ -54,7 +54,20 @@
   .form-contest__buttons {
     display: flex;
     justify-content: space-between;
+    order: 6;
     margin-top: 30px;
+    width: 616px;
+  }
+
+  .form-contest {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .form__slogan {
+    font-size: 18px;
   }
 
   .form-contest__achievements,
@@ -62,6 +75,7 @@
   .form-contest__contacts,
   .form-contest__comment {
     margin-bottom: 20px;
+    width: 616px;
 
     border: 1px solid #cccccc;
     background-color: #ffffff;
@@ -95,6 +109,24 @@
 
   .form-contest__comment {
     padding: 30px 60px;
+    order: 5;
+  }
+
+  .form-contest__fullname {
+    order: 1;
+    width: 616px;
+  }
+
+  .form-contest__achievements {
+    order: 4;
+  }
+
+  .form-contest__app {
+    order: 2;
+  }
+
+  .form-contest__contacts {
+    order: 3;
   }
 
   .form-contest__contacts legend {
@@ -113,6 +145,10 @@
     background-color: #ffffff;
   }
 
+  .form__slogan br {
+    display: none;
+  }
+
   .form-contest {
     display: flex;
     flex-wrap: wrap;
@@ -120,7 +156,7 @@
   }
 
   .form-contest__app {
-    order: -1;
+    order: 2;
     width: 431px;
   }
 
@@ -137,8 +173,14 @@
     width: 940px;
   }
 
+
+  .form-contest__app,
   .form-contest__fullname {
-    order: -1;
+    width: 400px;
+  }
+
+  .form-contest__fullname {
+    order: 1;
     width: 450px;
   }
 
@@ -157,6 +199,25 @@
   }
 
   .form-contest__comment {
+    order: 5;
     padding: 30px 60px;
+  }
+
+  .form-contest__achievements {
+    order: 4;
+  }
+
+  .form-contest__contacts {
+    order: 3;
+  }
+
+  .form-contest__buttons {
+    order: 6;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .form__fill {
+    display: none;
   }
 }
