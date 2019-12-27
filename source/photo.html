@@ -48,10 +48,11 @@
         Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?
       </p>
 
-      <ul class="photo-list">
+      <div>
+      <ul class="photo-list container">
         <li class="photo-list__item photo-list__item--of-day">
           <a href="#">
-            <img class="photo-list__img" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото">
+            <img class="photo-list__img photo-list__img--of-day" src="img/panorama-mobile@1x.jpg" alt="Фото">
           </a>
           <div class="photo__caption">
             <b class="photo__author">Анна</b>
@@ -130,37 +131,42 @@
           </div>
         </li>
       </ul>
+      </div>
     </section>
 
-    <section class="posting">
+    <section class="posting container">
       <h2 class="visually-hidden">Добавить фото</h2>
       <p class="posting__text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне</p>
-      <div class="posting__form-wrapper">
-        <div class="posting__form container" action="https://echo.htmlacademy.ru" method="post">
-          <img class="posting__photo" src="img/photo-road-mobile@1x.jpg" width="280" height="375" alt="Фотография">
-          <div>
-            <div class="posting__filter">
-          <div class="posting__tools">
-            <button class="posting__item posting__item--size button" type="button"></button>
-            <button class="posting__item posting__item--color button" type="button"></button>
-            <button class="posting__item posting__item--brightness button" type="button"></button>
-          </div>
-          <div class="posting__controls">
-            <div class="posting__scale posting__scale--size">
-              <button class="posting__scrollbox posting__scrollbox--size" type="button"></button>
+      <div class="posting__form" action="https://echo.htmlacademy.ru" method="post">
+        <img class="posting__photo" src="img/photo-road-mobile@1x.jpg" alt="Фотография">
+        <div>
+          <div class="posting__filter">
+            <div class="posting__tools">
+              <button class="posting__item posting__item--size button" type="button"></button>
+              <button class="posting__item posting__item--color button" type="button"></button>
+              <button class="posting__item posting__item--brightness button" type="button"></button>
             </div>
-            <div class="posting__scale posting__scale--color">
-              <button class="posting__scrollbox posting__scrollbox--color" type="button"></button>
+            <div class="posting__controls">
+              <div class="posting__toggle posting__toggle--size">
+                <span class="posting__scale posting__scale--size">
+                  <button class="posting__scrollbox posting__scrollbox--size" type="button"></button>
+                </span>
+              </div>
+              <div class="posting__toggle posting__toggle--color">
+                <span class="posting__scale posting__scale--color">
+                  <button class="posting__scrollbox posting__scrollbox--color" type="button"></button>
+                </span>
+              </div>
+              <div class="posting__toggle posting__toggle--brightness">
+                <span class="posting__scale posting__scale--brightness">
+                  <button class="posting__scrollbox posting__scrollbox--brightness" type="button"></button>
+                </span>
+              </div>
             </div>
-            <div class="posting__scale posting__scale--brightness">
-              <button class="posting__scrollbox posting__scrollbox--brightness" type="button"></button>
-            </div>
-          </div>
           </div>
           <div class="posting__buttons">
             <button class="button posting__button posting__button--submit" type="submit">Запостить</button>
             <button class="button posting__button posting__button--reset" type="button">Отмена</button>
-          </div>
           </div>
         </div>
         </form>
