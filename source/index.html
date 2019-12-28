@@ -15,7 +15,7 @@
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -117,12 +117,12 @@
             «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
         </blockquote>
-      </div>
-      <div class="reviews__switch">
-      <span class="reviews__toggle reviews__toggle--active"></span>
-      <span class="reviews__toggle"></span>
-      <span class="reviews__toggle"></span>
-      </div>
+        </div>
+        <div class="reviews__switch">
+          <span class="reviews__toggle reviews__toggle--active"></span>
+          <span class="reviews__toggle"></span>
+          <span class="reviews__toggle"></span>
+        </div>
     </section>
 
     <section class="tariff">
@@ -147,31 +147,33 @@
     </section>
 
     <section class="contacts">
-      <h2 class="visually-hidden">Обратная связь</h2>
-      <p class="contacts__slogan">
-        Остались вопросы? Свяжитесь с нами!
-      </p>
-      <ul class="contacts__list">
-        <li class="contacts__item">
-          <p class="contacts__text">
-            <b>Звоните:</b><br>
-            <a class="contacts__details" href="tel:+78125556666">+7 (812) 555-66-66</a>
-          </p>
-        </li>
-        <li class="contacts__item">
-          <p class="contacts__text">
-            <b>Пишите:</b><br>
-            <a class="contacts__details" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
-        </li>
-        <li class="contacts__item">
-          <p class="contacts__text">
-            <b>Приезжайте в гости:</b><br>
-            <span class="contacts__details">ул. Большая Конюшенная, 19/8</span>
-          </p>
-        </li>
-      </ul>
-      <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Организация находится по адресу ул. Большая Конюшенная, 19/8">
+      <div class="container">
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <p class="contacts__slogan">
+          Остались вопросы? Свяжитесь с нами!
+        </p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <p class="contacts__text">
+              <b>Звоните:</b><br>
+              <a class="contacts__details" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__text">
+              <b>Пишите:</b><br>
+              <a class="contacts__details" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__text">
+              <b>Приезжайте в гости:</b><br>
+              <span class="contacts__details">ул. Большая Конюшенная, 19/8</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <img class="contacts__map" src="img/bg-map-mobile@1x.png" alt="Организация находится по адресу ул. Большая Конюшенная, 19/8">
     </section>
     </section>
   </main>
@@ -202,7 +204,8 @@
       </div>
   </div>
   </footer>
-
+  <script src="js/script.js">
+  </script>
 </body>
 
 </html>

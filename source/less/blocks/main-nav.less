@@ -1,5 +1,5 @@
 .main-nav {
-  background-color: #283645;
+  background-color: transparent;
 
   border-top: 1px solid #000000;
 }
@@ -20,17 +20,32 @@
   cursor: pointer;
 }
 
+.main-nav--closed .site-list {
+  display: none;
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-image: url("../../img/icon-menu-burger.svg");
+  right: 10px;
+}
+
 @media (min-width: @tablet-width) {
   .main-nav__toggle {
     top: 25px;
   }
+
+  .main-nav--closed .site-list {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav {
+  .main-nav--closed .site-list {
     display: flex;
     flex-wrap: wrap;
+  }
 
+  .main-nav--closed {
     background-color: transparent;
     border: none;
   }
