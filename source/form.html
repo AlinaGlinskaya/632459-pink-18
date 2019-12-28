@@ -50,70 +50,74 @@
 
           <fieldset class="form-contest__fullname">
             <div class="form-contest__item">
-              <label class="form-text" for="surname">Фамилия</label>
+              <label class="form-text" for="surname">Фамилия:</label>
               <input class="text-field" type="text" name="fullname" id="surname" placeholder="Укажите фамилию *" required>
             </div>
             <div class="form-contest__item">
-              <label class="form-text" for="name">Имя</label>
+              <label class="form-text" for="name">Имя:</label>
               <input class="text-field" type="text" name="fullname" id="name" placeholder="Введите ваше имя *" required>
             </div>
             <div class="form-contest__item">
-              <label class="form-text" for="patronymic">Отчество</label>
+              <label class="form-text" for="patronymic">Отчество:</label>
               <input class="text-field" type="text" name="fullname" id="patronymic" placeholder="Ну и отчество тоже">
             </div>
           </fieldset>
 
           <fieldset class="form-contest__achievements">
             <legend class="form-text">Ваши безбашенные достижения в путешествии</legend>
-            <div class="form-contest__item">
+            <div class="form-contest__achievements-wrapper">
+            <div class="form-contest__item form-contest__item--selfie">
+              <input class="checkbox visually-hidden" type="checkbox" name="checkbox-item" id="selfie" checked>
               <label class="label-text" for="selfie">Сделал селфи с акулой</label>
-              <input class="checkbox" type="checkbox" name="checkbox-item" id="selfie" checked>
             </div>
-            <div class="form-contest__item">
+            <div class="form-contest__item form-contest__item--sunburn">
+              <input class="checkbox visually-hidden" type="checkbox" name="checkbox-item" id="sunburn" checked>
               <label class="label-text" for="sunburn">Обгорел на пляже</label>
-              <input class="checkbox" type="checkbox" name="checkbox-item" id="sunburn" checked>
             </div>
-            <div class="form-contest__item">
-              <label class="label-text" for="met-norris">Видел Чака Норриса</label>
-              <input class="checkbox" type="checkbox" name="checkbox-item" id="met-norris">
+            <div class="form-contest__item form-contest__item--norris">
+              <input class="checkbox visually-hidden" type="checkbox" name="checkbox-item" id="norris">
+              <label class="label-text" for="norris">Видел Чака Норриса</label>
             </div>
-            <div class="form-contest__item">
-              <label class="label-text" for="buy-souvenirs">Накупил сувениров</label>
-              <input class="checkbox" type="checkbox" name="checkbox-item" id="buy-souvenirs">
+            <div class="form-contest__item form-contest__item--souvenirs">
+              <input class="checkbox visually-hidden" type="checkbox" name="checkbox-item" id="souvenirs">
+              <label class="label-text" for="souvenirs">Накупил сувениров</label>
             </div>
-            <div class="form-contest__item">
-              <label class="label-text" for="hold-tower">Удержал башню</label>
-              <input class="checkbox" type="checkbox" name="checkbox-item" id="hold-tower" checked>
+            <div class="form-contest__item form-contest__item--tower">
+              <input class="checkbox visually-hidden" type="checkbox" name="checkbox-item" id="tower" checked>
+              <label class="label-text" for="tower">Удержал башню</label>
             </div>
-            <div class="form-contest__item">
+            <div class="form-contest__item form-contest__item--crush">
+              <input class="checkbox visually-hidden" type="checkbox" name="checkbox-item" id="crush">
               <label class="label-text" for="crush">Разгромил отель</label>
-              <input class="checkbox" type="checkbox" name="checkbox-item" id="crush">
+            </div>
             </div>
           </fieldset>
           <fieldset class="form-contest__contacts">
             <legend class="form-text">Контактная информация</legend>
+            <div class="form-contest__contacts-wrapper">
             <div class="form-contest__item">
-              <label class="form-text" for="phone">Номер телефона</label>
+              <label class="form-text form-contacts--phone" for="phone">Номер телефона</label>
               <input class="text-field" type="text" name="contacts" id="phone" placeholder="Номер, пожалуйста">
             </div>
             <div class="form-contest__item">
-              <label class="form-text" for="email">Адрес почты</label>
+              <label class="form-text form-contacts--mail" for="email">Адрес почты</label>
               <input class="text-field" type="text" name="contacts" id="email" placeholder="Введите почту *" required>
+            </div>
             </div>
           </fieldset>
           <fieldset class="form-contest__app">
             <legend class="form-text">С каким приложением путешествовали?</legend>
             <div class="form-contest__item">
+              <input class="radio visually-hidden" type="radio" name="radio-item" id="ios" checked>
               <label class="label-text" for="ios">Pink для iOS</label>
-              <input class="radio" type="radio" name="radio-item" id="ios" checked>
             </div>
             <div class="form-contest__item">
+              <input class="radio visually-hidden" type="radio" name="radio-item" id="android">
               <label class="label-text" for="android">Pink на Android</label>
-              <input class="radio" type="radio" name="radio-item" id="android">
             </div>
             <div class="form-contest__item">
+              <input class="radio visually-hidden" type="radio" name="radio-item" id="windows-phone">
               <label class="label-text" for="windows-phone">Windows Phone</label>
-              <input class="radio" type="radio" name="radio-item" id="windows-phone">
             </div>
           </fieldset>
           <fieldset class="form-contest__comment">
