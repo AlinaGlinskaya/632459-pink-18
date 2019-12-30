@@ -1,7 +1,15 @@
 .download {
+  color: #ffffff;
+
   background-color: #283645;
 
-  color: #ffffff;
+  &--closed-menu {
+    margin-top: -110px;
+  }
+
+  &--opened-menu {
+    margin-top: 0;
+  }
 }
 
 .download .container {
@@ -12,6 +20,14 @@
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  &--closed-menu {
+    padding-top: 110px;
+  }
+
+  &--opened-menu {
+    padding-top: 0;
+  }
 }
 
 .download__slogan {
