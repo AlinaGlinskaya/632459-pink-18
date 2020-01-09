@@ -9,7 +9,6 @@
 .photo-list__img {
   display: block;
   margin: 0 auto;
-  margin-bottom: 20px;
   width: 100%;
   height: auto;
 
@@ -18,14 +17,35 @@
   }
 }
 
+  .photo-list__item--of-day:after {
+    content: "Панорама дня";
+
+    position: absolute;
+    top: 0;
+    right: 20px;
+
+    width: 140px;
+    height: 36px;
+    padding-top: 10px;
+
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: bold;
+    text-align: center;
+
+    background-color: #d22856;
+  }
+
+
 .photo > div {
   position: relative;
 }
 
 .photo-list__item {
-  margin-bottom: 20px;
-
-  background-color: #f2f2f2;
+  margin-bottom: 18px;
+  padding: 0 10px;
 
   &--of-day {
     padding-top: 137px;
@@ -43,6 +63,10 @@
   height: 506px;
 }
 
+.photo-list__item:first-child .photo__caption {
+  padding: 16px;
+}
+
 .photo__date {
   text-transform: uppercase;
   font-size: 12px;
@@ -50,16 +74,18 @@
 }
 
 .photo__caption {
-  padding: 20px;
+  padding: 17px;
 
   line-height: 24px;
   color: #283645;
+
+  background-color: #f2f2f2;
 }
 
 .photo__likes {
   display: block;
   position: relative;
-  padding-left: 30px;
+  padding-left: 32px;
 
   font-size: 12px;
   text-decoration: none;
@@ -72,13 +98,13 @@
     width: 20px;
     height: 20px;
     top: 0;
-    left: 5px;
+    left: 1px;
   }
 }
 
 .photo-description {
   margin: 0 auto;
-  padding: 30px 0 50px 0;
+  padding: 30px 35px 50px;
 
   text-align: center;
 }
@@ -109,12 +135,17 @@
   .photo-description {
     margin-bottom: 50px;
     margin-top: 60px;
+    padding: 30px 50px 26px 50px;
 
     font-size: 18px;
   }
 
   .photo-list__img--of-day {
     height: 509px;
+  }
+
+  .photo-list__item--of-day:after {
+    top: 58px;
   }
 }
 
