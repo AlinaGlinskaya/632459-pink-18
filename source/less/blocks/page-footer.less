@@ -1,5 +1,4 @@
 .page-footer {
-  margin-top: 25px;
   width: 210px;
   margin-left: auto;
   margin-right: auto;
@@ -14,7 +13,7 @@
 .page-footer__logo {
   display: block;
   width: 210px;
-  padding: 25px;
+  padding: 20px 8px;
 }
 
 .page-footer__social {
@@ -31,8 +30,7 @@
     justify-content: space-between;
     align-items: center;
     width: auto;
-    margin-bottom: 0;
-    margin-top: 25px;
+    margin: 20px 0 18px;
   }
 }
 
@@ -46,7 +44,19 @@
     justify-content: space-between;
     align-items: center;
     width: auto;
-    margin-bottom: 0;
-    margin-top: 25px;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .page-footer {
+    margin-top: 20px;
+  }
+
+  .page-footer__logo {
+    padding: 20px 27px;
+  }
+
+  .page-footer__social {
+    margin: 5px auto 30px;
   }
 }
