@@ -10,7 +10,7 @@
 
 <body>
 
-  <header class="page-header page-header--closed-menu">
+  <header class="page-header page-header--nojs">
     <div class="page-header__wrapper container">
       <a class="page-header__logo">
         <picture>
@@ -19,7 +19,7 @@
           <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк">
         </picture>
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -51,9 +51,9 @@
             <div class="download__slogan">Взгляните на жизнь иначе!</div>
             <div class="download__picture">
               <picture>
-                <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png">
-                <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png">
-                <img class="download__image" src="img/iphone-hand-mobile@1x.png" alt="Приложение Пинк на смартфоне">
+                <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+                <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+                <img class="download__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Приложение Пинк на смартфоне">
               </picture>
             </div>
             <div class="download__details">
@@ -84,14 +84,14 @@
             <h3 class="features__title">Поднимает настроение</h3>
             <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             <div class="features__picture">
-              <img src="img/iphone-screen-1-desktop@1x.png" width="157" height="320" alt="Приложение Пинк на смартфоне">
+              <img src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Приложение Пинк на смартфоне">
             </div>
           </li>
           <li class="features__item">
             <h3 class="features__title">Меняет мир вокруг</h3>
             <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <br>усилить эффект</p>
             <div class="features__picture">
-              <img src="img/iphone-screen-2-desktop@1x.png" width="157" height="320" alt="Приложение Пинк на смартфоне">
+                <img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Приложение Пинк на смартфоне">
             </div>
           </li>
           <li class="features__item">
@@ -99,9 +99,9 @@
             <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             <div class="features__picture">
               <picture>
-                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
-                <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png">
-                <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Приложение Пинк на смартфоне">
+                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+                <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Приложение Пинк на смартфоне">
               </picture>
             </div>
           </li>
@@ -193,9 +193,9 @@
         </ul>
       </div>
       <picture>
-        <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.png">
-        <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.png">
-        <img class="contacts__map" src="img/bg-map-mobile@1x.png" alt="Организация находится по адресу ул. Большая Конюшенная, 19/8">
+        <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+        <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+        <img class="contacts__map" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Организация находится по адресу ул. Большая Конюшенная, 19/8">
       </picture>
     </section>
     </section>

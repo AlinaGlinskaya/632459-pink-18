@@ -1,7 +1,5 @@
 .main-nav {
-  background-color: transparent;
-
-  border-top: 1px solid #000000;
+  background-color: #283645;
 }
 
 .main-nav__toggle {
@@ -20,22 +18,30 @@
   cursor: pointer;
 }
 
+.main-nav {
+  border-top: 1px solid #000000;
+}
+
+.main-nav--closed .main-nav__toggle {
+  right: 9px;
+  top: 2px;
+
+  background-image: url("../../img/icon-menu-burger.svg");
+}
+
+.main-nav .site-list {
+  display: block;
+}
 .main-nav--closed .site-list {
   display: none;
 }
 
-.main-nav--closed .main-nav__toggle {
-  background-image: url("../../img/icon-menu-burger.svg");
-  right: 9px;
-  top: 2px;
+.main-nav--nojs .main-nav__toggle {
+  display: none;
 }
 
 .main-nav--closed {
-  border: none;
-}
-
-.main-nav--nojs .main-nav__toggle {
-  display: none;
+  border-top: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -48,18 +54,18 @@
   }
 
   .main-nav--closed .main-nav__toggle {
-    top: 24px;
+    top: 25px;
     right: 11px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav--closed .site-list {
+  .main-nav .site-list {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .main-nav--closed {
+  .main-nav {
     background-color: transparent;
     border: none;
   }

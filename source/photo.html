@@ -10,12 +10,16 @@
 
 <body>
 
-  <header class="page-header page-header--closed-menu">
+  <header class="page-header page-header--nojs">
     <div class="page-header__wrapper container">
       <a href="index.html" class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк">
+        <picture>
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
+        </picture>
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -52,7 +56,11 @@
         <ul class="photo-list container">
           <li class="photo-list__item photo-list__item--of-day">
             <a href="#">
-              <img class="photo-list__img photo-list__img--of-day" src="img/panorama-mobile@1x.jpg" alt="Фото">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <img class="photo-list__img photo-list__img--of-day" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото">
+              </picture>
             </a>
             <div class="photo__caption">
               <b class="photo__author">Анна</b>
@@ -64,7 +72,11 @@
           </li>
           <li class="photo-list__item">
             <a href="#">
-              <img class="photo-list__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <img class="photo-list__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото">
+              </picture>
             </a>
             <div class="photo__caption">
               <b class="photo__author">Левон</b>
@@ -76,7 +88,11 @@
           </li>
           <li class="photo-list__item">
             <a href="#">
-              <img class="photo-list__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <img class="photo-list__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото">
+              </picture>
             </a>
             <div class="photo__caption">
               <b class="photo__author">Антон</b>
@@ -87,7 +103,11 @@
           </li>
           <li class="photo-list__item">
             <a href="#">
-              <img class="photo-list__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <img class="photo-list__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото">
+              </picture>
             </a>
             <div class="photo__caption">
               <b class="photo__author">Борис</b>
@@ -99,7 +119,11 @@
           </li>
           <li class="photo-list__item">
             <a href="#">
-              <img class="photo-list__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <img class="photo-list__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото">
+              </picture>
             </a>
             <div class="photo__caption">
               <b class="photo__author">Сергей</b>
@@ -110,7 +134,11 @@
           </li>
           <li class="photo-list__item">
             <a href="#">
-              <img class="photo-list__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <img class="photo-list__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото">
+              </picture>
             </a>
             <div class="photo__caption">
               <b class="photo__author">Максим</b>
@@ -121,7 +149,11 @@
           </li>
           <li class="photo-list__item">
             <a href="#">
-              <img class="photo-list__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <img class="photo-list__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото">
+              </picture>
             </a>
             <div class="photo__caption">
               <b class="photo__author">Надежда</b>
@@ -138,40 +170,44 @@
       <h2 class="visually-hidden">Добавить фото</h2>
       <p class="posting__text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне</p>
       <div class="posting__form-wrapper">
-      <form class="posting__form container" action="https://echo.htmlacademy.ru" method="post">
-        <img class="posting__photo" src="img/photo-road-mobile@1x.jpg" alt="Фотография">
-        <div>
-          <div class="posting__filter">
-            <div class="posting__tools">
-              <button class="posting__item posting__item--size button" type="button"></button>
-              <button class="posting__item posting__item--color button" type="button"></button>
-              <button class="posting__item posting__item--brightness button" type="button"></button>
+        <form class="posting__form container" action="https://echo.htmlacademy.ru" method="post">
+          <picture>
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+          <img class="posting__photo" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фотография">
+          </picture>
+          <div>
+            <div class="posting__filter">
+              <div class="posting__tools">
+                <button class="posting__item posting__item--size button" type="button"></button>
+                <button class="posting__item posting__item--color button" type="button"></button>
+                <button class="posting__item posting__item--brightness button" type="button"></button>
+              </div>
+              <div class="posting__controls">
+                <div class="posting__toggle posting__toggle--size">
+                  <span class="posting__scale posting__scale--size">
+                    <button class="posting__scrollbox posting__scrollbox--size" type="button"></button>
+                  </span>
+                </div>
+                <div class="posting__toggle posting__toggle--color">
+                  <span class="posting__scale posting__scale--color">
+                    <button class="posting__scrollbox posting__scrollbox--color" type="button"></button>
+                  </span>
+                </div>
+                <div class="posting__toggle posting__toggle--brightness">
+                  <span class="posting__scale posting__scale--brightness">
+                    <button class="posting__scrollbox posting__scrollbox--brightness" type="button"></button>
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="posting__controls">
-              <div class="posting__toggle posting__toggle--size">
-                <span class="posting__scale posting__scale--size">
-                  <button class="posting__scrollbox posting__scrollbox--size" type="button"></button>
-                </span>
-              </div>
-              <div class="posting__toggle posting__toggle--color">
-                <span class="posting__scale posting__scale--color">
-                  <button class="posting__scrollbox posting__scrollbox--color" type="button"></button>
-                </span>
-              </div>
-              <div class="posting__toggle posting__toggle--brightness">
-                <span class="posting__scale posting__scale--brightness">
-                  <button class="posting__scrollbox posting__scrollbox--brightness" type="button"></button>
-                </span>
-              </div>
+            <div class="posting__buttons">
+              <button class="button posting__button posting__button--submit" type="submit">Запостить</button>
+              <button class="button posting__button posting__button--reset" type="button">Отмена</button>
             </div>
           </div>
-          <div class="posting__buttons">
-            <button class="button posting__button posting__button--submit" type="submit">Запостить</button>
-            <button class="button posting__button posting__button--reset" type="button">Отмена</button>
-          </div>
-        </div>
         </form>
-        </div>
+      </div>
     </section>
 
   </main>
