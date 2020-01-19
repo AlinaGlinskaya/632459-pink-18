@@ -1,13 +1,12 @@
 .tariff__table {
   margin: 0 auto;
 
-  text-transform: uppercase;
-
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 .tariff__name {
-  padding: 22px 90px;
+  padding: 18px 30px;
 
   font-size: 18px;
   text-align: center;
@@ -19,32 +18,45 @@
 }
 
 .tariff__options {
-  position: relative;
   padding: 15px 25px;
 
   color: #283645;
+  font-weight: normal;
+
+  border: 2px solid #e5e5e5;
+}
+
+.tariff__function {
+  display: none;
+}
+
+
+.tariff__cell {
+  position: relative;
+
+  padding: 14px 40px;
 
   border: 2px solid #e5e5e5;
 
-  &--check::after {
+  &--yes::after {
     position: absolute;
     content: "";
     width: 30px;
     height: 30px;
     top: 20px;
-    left: 220px;
+    left: 250px;
 
     background-image: url("../../img/icon-yes.svg");
     background-repeat: no-repeat;
   }
 
-  &--cross::after {
+  &--no::after {
     position: absolute;
     content: "";
     width: 35px;
     height: 30px;
     top: 20px;
-    left: 220px;
+    left: 250px;
 
     background-image: url("../../img/icon-no.svg");
     background-repeat: no-repeat;
@@ -59,5 +71,75 @@
 @media (min-width: @tablet-width) {
   .tariff__options::after {
     display: none;
+  }
+
+  .tariff__table {
+    width: 620px;
+  }
+
+  .tariff__name br {
+    display: none;
+  }
+
+  .tariff__cell {
+
+    &--yes::after {
+      left: 65px;
+    }
+
+    &--no::after {
+      left: 65px;
+    }
+  }
+
+  .tariff__options {
+    padding: 8px 16px;
+
+    text-align: left;
+  }
+
+  .tariff__name {
+    padding: 10px 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tariff__cell {
+
+    &--yes::after {
+      left: 120px;
+    }
+
+    &--no::after {
+      left: 120px;
+    }
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .tariff__table {
+    width: 300%;
+
+    text-transform: uppercase;
+  }
+
+  .tariff__table-wrapper {
+    overflow: auto;
+  }
+
+  .tariff__cell {
+    width: calc(100% - 44px);
+  }
+
+  .tariff__options {
+    display: none;
+  }
+
+  .tariff__table td:first-child {
+    display: none;
+  }
+
+  .tariff__function {
+    display: block;
   }
 }

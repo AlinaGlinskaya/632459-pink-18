@@ -91,7 +91,7 @@
             <h3 class="features__title">Меняет мир вокруг</h3>
             <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <br>усилить эффект</p>
             <div class="features__picture">
-                <img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Приложение Пинк на смартфоне">
+              <img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Приложение Пинк на смартфоне">
             </div>
           </li>
           <li class="features__item">
@@ -146,23 +146,70 @@
 
     <section class="tariff">
       <h2 class="visually-hidden">Тарифы</h2>
-      <table class="tariff__table">
-        <tr>
-          <th class="tariff__name tariff__name--hit">
-            <b>Стандарт</b><br>
-            <span class="tariff__price">3,99 USD</span>
-          </th>
-        </tr>
-        <tr>
-          <td class="tariff__options tariff__options--check">Розовый фильтр</td>
-        </tr>
-        <tr>
-          <td class="tariff__options tariff__options--check">Смайлики</td>
-        </tr>
-        <tr>
-          <td class="tariff__options tariff__options--cross">Комментарии</td>
-        </tr>
-      </table>
+      <div class="tariff__table-wrapper">
+        <table class="tariff__table">
+          <tr>
+            <td></td>
+            <th class="tariff__name" scope="col">
+              <b>База</b><br>
+              <span class="tariff__price">1,99 USD</span>
+            </th>
+            <th class="tariff__name" scope="col">
+              <b>Стандарт</b><br>
+              <span class="tariff__price">3,99 USD</span>
+            </th>
+            <th class="tariff__name" scope="col">
+              <b>Анлим</b><br>
+              <span class="tariff__price">9,99 USD</span>
+            </th>
+          </tr>
+          <tr>
+            <th class="tariff__options" scope="row">Розовый фильтр</th>
+            <td class="tariff__cell tariff__cell--yes">
+              <span class="tariff__function">Розовый фильтр</span>
+              <span class="visually-hidden">Есть</span>
+            </td>
+            <td class="tariff__cell tariff__cell--yes">
+              <span class="tariff__function">Розовый фильтр</span>
+              <span class="visually-hidden">Есть</span>
+            </td>
+            <td class="tariff__cell tariff__cell--yes">
+              <span class="tariff__function">Розовый фильтр</span>
+              <span class="visually-hidden">Есть</span>
+            </td>
+          </tr>
+          <tr>
+            <th class="tariff__options" scope="row">Смайлики</th>
+            <td class="tariff__cell tariff__cell--no">
+              <span class="tariff__function">Смайлики</span>
+              <span class="visually-hidden">Нет</span>
+            </td>
+            <td class="tariff__cell tariff__cell--yes">
+              <span class="tariff__function">Смайлики</span>
+              <span class="visually-hidden">Есть</span>
+            </td>
+            <td class="tariff__cell tariff__cell--yes">
+              <span class="tariff__function">Смайлики</span>
+              <span class="visually-hidden">Есть</span>
+            </td>
+          </tr>
+          <tr>
+            <th class="tariff__options" scope="row">Комментарии</th>
+            <td class="tariff__cell tariff__cell--no">
+              <span class="tariff__function">Комментарии</span>
+              <span class="visually-hidden">Нет</span>
+            </td>
+            <td class="tariff__cell tariff__cell--no">
+              <span class="tariff__function">Комментарии</span>
+              <span class="visually-hidden">Нет</span>
+            </td>
+            <td class="tariff__cell tariff__cell--yes">
+              <span class="tariff__function">Комментарии</span>
+              <span class="visually-hidden">Есть</span>
+            </td>
+          </tr>
+        </table>
+      </div>
     </section>
 
     <section class="contacts">

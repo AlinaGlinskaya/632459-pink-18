@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="form-page">
 
   <header class="page-header page-header--nojs">
     <div class="page-header__wrapper container">
@@ -67,75 +67,81 @@
             </div>
           </fieldset>
 
+        <div class="form-contest__achievements-wrapper">
           <fieldset class="form-contest__achievements">
-            <legend class="form-text">Ваши безбашенные достижения в путешествии</legend>
-            <div class="form-contest__achievements-wrapper">
-              <div class="form-contest__item form-contest__item--selfie">
-                <input class="checkbox visually-hidden" type="checkbox" name="checkbox-item" id="selfie" checked>
-                <label class="label-text" for="selfie">Сделал селфи с акулой</label>
-              </div>
-              <div class="form-contest__item form-contest__item--sunburn">
-                <input class="checkbox visually-hidden" type="checkbox" name="checkbox-item" id="sunburn" checked>
-                <label class="label-text" for="sunburn">Обгорел на пляже</label>
-              </div>
-              <div class="form-contest__item form-contest__item--norris">
-                <input class="checkbox visually-hidden" type="checkbox" name="checkbox-item" id="norris">
-                <label class="label-text" for="norris">Видел Чака Норриса</label>
-              </div>
-              <div class="form-contest__item form-contest__item--souvenirs">
-                <input class="checkbox visually-hidden" type="checkbox" name="checkbox-item" id="souvenirs">
-                <label class="label-text" for="souvenirs">Накупил сувениров</label>
-              </div>
-              <div class="form-contest__item form-contest__item--tower">
-                <input class="checkbox visually-hidden" type="checkbox" name="checkbox-item" id="tower" checked>
-                <label class="label-text" for="tower">Удержал башню</label>
-              </div>
-              <div class="form-contest__item form-contest__item--crush">
-                <input class="checkbox visually-hidden" type="checkbox" name="checkbox-item" id="crush">
-                <label class="label-text" for="crush">Разгромил отель</label>
-              </div>
+          <legend class="form-text">Ваши безбашенные достижения в путешествии</legend>
+          <div class="form-contest__achievements-list">
+            <div class="form-contest__item form-contest__item--selfie">
+              <input class="checkbox visually-hidden" type="checkbox" name="checkbox-item" id="selfie" checked>
+              <label class="label-text" for="selfie">Сделал селфи с акулой</label>
             </div>
-          </fieldset>
-          <fieldset class="form-contest__contacts">
-            <legend class="form-text">Контактная информация</legend>
-            <div class="form-contest__contacts-wrapper">
-              <div class="form-contest__item">
-                <label class="form-text form-contacts--phone" for="phone">Номер телефона</label>
-                <input class="text-field" type="text" name="contacts" id="phone" placeholder="Номер, пожалуйста">
-              </div>
-              <div class="form-contest__item">
-                <label class="form-text form-contacts--mail" for="email">Адрес почты</label>
-                <input class="text-field" type="text" name="contacts" id="email" placeholder="Введите почту *" required>
-              </div>
+            <div class="form-contest__item form-contest__item--sunburn">
+              <input class="checkbox visually-hidden" type="checkbox" name="checkbox-item" id="sunburn" checked>
+              <label class="label-text" for="sunburn">Обгорел на пляже</label>
             </div>
-          </fieldset>
-          <fieldset class="form-contest__app">
-            <legend class="form-text">С каким приложением путешествовали?</legend>
-            <div class="form-contest__item">
-              <input class="radio visually-hidden" type="radio" name="radio-item" id="ios" checked>
-              <label class="label-text" for="ios">Pink для iOS</label>
+            <div class="form-contest__item form-contest__item--norris">
+              <input class="checkbox visually-hidden" type="checkbox" name="checkbox-item" id="norris">
+              <label class="label-text" for="norris">Видел Чака Норриса</label>
             </div>
-            <div class="form-contest__item">
-              <input class="radio visually-hidden" type="radio" name="radio-item" id="android">
-              <label class="label-text" for="android">Pink на Android</label>
+            <div class="form-contest__item form-contest__item--souvenirs">
+              <input class="checkbox visually-hidden" type="checkbox" name="checkbox-item" id="souvenirs">
+              <label class="label-text" for="souvenirs">Накупил сувениров</label>
             </div>
-            <div class="form-contest__item">
-              <input class="radio visually-hidden" type="radio" name="radio-item" id="windows-phone">
-              <label class="label-text" for="windows-phone">Windows Phone</label>
+            <div class="form-contest__item form-contest__item--tower">
+              <input class="checkbox visually-hidden" type="checkbox" name="checkbox-item" id="tower" checked>
+              <label class="label-text" for="tower">Удержал башню</label>
             </div>
-          </fieldset>
-          <fieldset class="form-contest__comment">
-            <legend class="form-text">Опишите свои эмоции</legend>
-            <textarea class="text-field form-contest__review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </fieldset>
-          <div class="form-contest__buttons">
-            <button class="button form-contest__submit" type="submit">Отправить форму</button>
-            <div class="form-contest__required"><sup>*</sup>&nbsp;-&nbsp;обязательные&nbsp;<span class="form-contest__specify">для&nbsp;заполнения</span>&nbsp;поля</div>
+            <div class="form-contest__item form-contest__item--crush">
+              <input class="checkbox visually-hidden" type="checkbox" name="checkbox-item" id="crush">
+              <label class="label-text" for="crush">Разгромил отель</label>
+            </div>
           </div>
-        </form>
-      </section>
+        </fieldset>
+        </div>
 
+    <fieldset class="form-contest__contacts">
+      <legend class="form-text">Контактная информация</legend>
+      <div class="form-contest__contacts-wrapper">
+        <div class="form-contest__item">
+          <label class="form-text form-contacts--phone" for="phone">Номер телефона</label>
+          <input class="text-field" type="text" name="contacts" id="phone" placeholder="Номер, пожалуйста">
+        </div>
+        <div class="form-contest__item">
+          <label class="form-text form-contacts--mail" for="email">Адрес почты</label>
+          <input class="text-field" type="text" name="contacts" id="email" placeholder="Введите почту *" required>
+        </div>
+      </div>
+    </fieldset>
+
+    <div class="form-contest__app-wrapper">
+      <fieldset class="form-contest__app">
+        <legend class="form-text">С каким приложением путешествовали?</legend>
+        <div class="form-contest__item">
+          <input class="radio visually-hidden" type="radio" name="radio-item" id="ios" checked>
+          <label class="label-text" for="ios">Pink для iOS</label>
+        </div>
+        <div class="form-contest__item">
+          <input class="radio visually-hidden" type="radio" name="radio-item" id="android">
+          <label class="label-text" for="android">Pink на Android</label>
+        </div>
+        <div class="form-contest__item">
+          <input class="radio visually-hidden" type="radio" name="radio-item" id="windows-phone">
+          <label class="label-text" for="windows-phone">Windows Phone</label>
+        </div>
+      </fieldset>
     </div>
+
+    <fieldset class="form-contest__comment">
+      <legend class="form-text">Опишите свои эмоции</legend>
+      <textarea class="text-field form-contest__review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+    </fieldset>
+    <div class="form-contest__buttons">
+      <button class="button form-contest__submit" type="submit">Отправить форму</button>
+      <div class="form-contest__required"><sup>*</sup>&nbsp;-&nbsp;обязательные&nbsp;<span class="form-contest__specify">для&nbsp;заполнения</span>&nbsp;поля</div>
+    </div>
+    </form>
+    </section>
+
   </main>
 
   <div class="container">
