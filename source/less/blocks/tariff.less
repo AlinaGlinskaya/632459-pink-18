@@ -9,8 +9,8 @@
   table-layout: fixed;
 }
 
-.tariff__toggle {
-  margin: 40px auto 37px;
+.tariff__toggle span {
+  display: none;
 }
 
 .tariff__name {
@@ -85,10 +85,6 @@
     width: 620px;
   }
 
-  .tariff__name br {
-    display: none;
-  }
-
   .tariff__cell {
 
     &--yes::after {
@@ -107,7 +103,15 @@
   }
 
   .tariff__name {
-    padding: 10px 15px;
+    padding: 12px 20px 8px;
+
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .tariff__price {
+    font-size: 18px;
   }
 }
 
@@ -149,5 +153,10 @@
 
   .tariff__function {
     display: block;
+  }
+
+  .tariff__toggle {
+    display: block;
+    margin: 40px auto 37px;
   }
 }

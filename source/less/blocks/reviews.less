@@ -37,6 +37,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .reviews {
+    margin-top: 34px;
+  }
+
   .reviews__author span {
     display: block;
 
@@ -48,6 +52,12 @@
   .reviews__item {
     display: flex;
     flex-direction: column;
+
+    padding: 0;
+  }
+
+  .reviews__item p:first-child {
+    margin-top: 26px;
   }
 
   .reviews__text {
