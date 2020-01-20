@@ -44,11 +44,6 @@
   text-align: center;
 }
 
-.download__image {
-  width: 259px;
-  height: 284px;
-}
-
 .download__button {
   width: 280px;
   margin: 0 auto;
@@ -94,7 +89,7 @@
 }
 
 .download__details {
-  padding-top: 35px;
+  padding-top: 36px;
 
   background-color: #1d2631;
 }
@@ -156,11 +151,6 @@
     padding-top: 70px;
   }
 
-  .download__image {
-    width: 695px;
-    height: 545px;
-  }
-
   .download__details {
     margin-top: 25px;
     padding-top: 0;
@@ -178,8 +168,8 @@
   .download__picture {
     position: absolute;
     z-index: -1;
-    left: -28px;
-    top: 71px;
+    left: 76px;
+    top: 73px;
 
     height: auto;
     margin: 0;
@@ -230,18 +220,26 @@
 
   .download__picture {
     position: absolute;
-    top: -6px;
-    left: 125px;
+    top: -2px;
+    left: 246px;
 
     display: block;
     height: auto;
     margin: 0;
-    width: 700px;
+
+    @media (min-resolution: @retina-dppx) {
+      left: 128px;
+    }
   }
 
   .download__image {
-    width: 826px;
-    height: 650px;
+    width: 700px;
+    height: 645px;
+
+    @media (min-resolution: @retina-dppx) {
+    width: 820px;
+    height: 645px;
+    }
   }
 
   .download__description {

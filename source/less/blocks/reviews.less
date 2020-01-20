@@ -1,5 +1,6 @@
 .reviews {
   margin-bottom: 30px;
+  margin-top: 42px;
 
   text-align: center;
 }
@@ -7,6 +8,10 @@
 .reviews__item {
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.reviews__item p:first-child {
+  margin: 0;
 }
 
 .reviews__author {
@@ -27,28 +32,8 @@
   display: none;
 }
 
-.reviews__switch {
-  width: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px auto;
-}
-
 .reviews__toggle {
-  width: 6px;
-  height: 6px;
-
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.3);
-
-  &--active {
-    width: 12px;
-    height: 12px;
-
-    background-color: #ffffff;
-    border: 3px solid #000000;
-  }
+  margin: 34px auto;
 }
 
 @media (min-width: @tablet-width) {
