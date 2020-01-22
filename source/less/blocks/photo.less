@@ -135,8 +135,18 @@
     &--of-day {
       min-width: 620px;
       margin: 0 auto;
-      padding-top: 506px;
+      padding-top: 505px;
     }
+  }
+
+  .photo__likes::before {
+    right: -3px;
+  }
+
+  .photo-list__item--of-day .photo__likes {
+    order: -1;
+    margin-left: auto;
+    margin-top: 20px;
   }
 
   .photo-description {
@@ -153,6 +163,10 @@
 
   .photo-list__item--of-day::after {
     top: 58px;
+  }
+
+  .photo-list__item:first-child .photo__caption {
+    padding: 16px 26px;
   }
 }
 

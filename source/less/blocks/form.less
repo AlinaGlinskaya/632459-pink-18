@@ -196,7 +196,7 @@
   }
 
   .form-contest__achievements {
-    height: 565px;
+    min-height: 565px;
   }
 
   .form-contest__contacts fieldset {
@@ -451,7 +451,8 @@
 
   .form-contest__app {
     order: 2;
-    width: 431px;
+    width: 433px;
+    height: 312px;
   }
 
   .form-contest__app .form-contest__item,
@@ -467,32 +468,55 @@
     width: 940px;
   }
 
-
-  .form-contest__app,
-  .form-contest__fullname {
-    width: 400px;
-  }
-
   .form-contest__fullname {
     order: 0;
-    width: 450px;
-    height: 283px;
-    padding-top: 30px;
-    padding-bottom: 0;
+    width: 505px;
+    margin-left: 0;
+    margin-bottom: 51px;
+  }
+
+  .form-contest__contacts legend {
+    margin-bottom: 5px;
+  }
+
+  .form-contest__contacts .form-contest__item {
+    margin: 0;
+    width: 371px;
+  }
+
+  .form-contest__fullname input {
+    width: 100%;
+    margin-right: 68px;
   }
 
   .form-contest__fullname .form-contest__item {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 53px;
+  }
+
+  .form-contest__app .form-text {
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 2px;
+  }
+
+  .form-contest__app .form-contest__item {
+    height: 54px;
+    padding: 8px 37px;
+    margin: 18px 20px 18px 45px;
   }
 
   .form-contest__fullname label {
-    margin-right: 10px;
+    margin-right: 19px;
   }
 
   .form-contest__contacts legend {
     display: block;
+  }
+
+  .form-contest__achievements {
+    min-height: 241px;
   }
 
   .form-contest__comment {
@@ -507,6 +531,8 @@
   .form-contest__contacts {
     order: 3;
     padding: 20px 20px 0;
+    height: 175px;
+    margin-bottom: 48px;
   }
 
   .form-contest__contacts input {
@@ -521,6 +547,12 @@
     display: inline;
   }
 
+  .form__slogan {
+    margin: 50px auto 25px;
+    padding: 43px 17px;
+    width: 796px;
+  }
+
   .form-contest__contacts-wrapper {
     flex-direction: row;
     height: auto;
@@ -528,13 +560,27 @@
 
   .form-contest__achievements-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  .form-contest__achievements .form-contest__item {
+    width: 300px;
+    padding: 12px 0 0 50px;
+  }
+
+  .form-contest__comment .text-field {
+    width: 818px;
+    min-height: 150px;
+  }
+
+  .form-contest__comment {
+    min-height: 200px;
   }
 
   .form-contest__achievements-list .form-contest__item {
     width: 300px;
-    margin-bottom: 30px;
+    margin-bottom: 4px;
 
     &--selfie {
       order: 1;
