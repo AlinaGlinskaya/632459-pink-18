@@ -44,6 +44,8 @@
 }
 
 .photo-list__item {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
   padding: 0 10px;
   min-height: 300px;
@@ -74,6 +76,9 @@
 }
 
 .photo__caption {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   padding: 17px;
 
   line-height: 24px;
@@ -86,6 +91,7 @@
   display: block;
   position: relative;
   padding-left: 32px;
+  margin-top: auto;
 
   font-size: 12px;
   text-decoration: none;
@@ -123,14 +129,22 @@
 
   .photo-list__item {
     flex: 1 0 40%;
-    margin-left: 10px;
-    margin-right: 10px;
 
     &--of-day {
       min-width: 620px;
       margin: 0 auto;
-      padding-top: 506px;
+      padding-top: 505px;
     }
+  }
+
+  .photo__likes::before {
+    right: -3px;
+  }
+
+  .photo-list__item--of-day .photo__likes {
+    order: -1;
+    margin-left: auto;
+    margin-top: 20px;
   }
 
   .photo-description {
@@ -147,6 +161,10 @@
 
   .photo-list__item--of-day::after {
     top: 58px;
+  }
+
+  .photo-list__item:first-child .photo__caption {
+    padding: 16px 26px;
   }
 }
 
