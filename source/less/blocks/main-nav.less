@@ -6,14 +6,17 @@
 
 .main-nav__toggle {
   position: absolute;
-  right: -4px;
+  right: 0;
   top: 0;
-  width: 70px;
-  height: 60px;
+
+  padding: 0;
+  width: 90px;
+  height: 68px;
+
 
   background-image: url("../../img/icon-menu-cross.svg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center right 19px;
   background-color: transparent;
   border: none;
 
@@ -21,10 +24,8 @@
 }
 
 .main-nav--closed .main-nav__toggle {
-  right: 9px;
-  top: 2px;
-
   background-image: url("../../img/icon-menu-burger.svg");
+  background-position: center;
 }
 
 .main-nav .site-list {
@@ -53,8 +54,8 @@
   }
 
   .main-nav--closed .main-nav__toggle {
-    top: 25px;
-    right: 11px;
+    top: 22px;
+    right: 0;
   }
 }
 
