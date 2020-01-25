@@ -10,17 +10,32 @@
 .page-header__logo {
   display: block;
   width: 150px;
-  padding: 22px 10px 23px 20px;
+  padding: 21px 10px 16px 20px;
 }
 
 .page-header__logo-image {
-  display: block;
+  &--desktop {
+    display: none;
+  }
+
+  &--tablet {
+    display: none;
+  }
 }
 
 .page-header--closed {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.page-header__logo-image {
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
 @media (min-width: @tablet-width) {
   .page-header__logo {
     padding: 12px 19px;
@@ -38,6 +53,14 @@
   .page-header__logo-image {
     width: 147px;
     height: 40px;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
   }
 
   .page-header-wrapper {
@@ -55,6 +78,18 @@
 
   .page-header__logo-image {
     display: block;
+
+    &--desktop {
+      display: block;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+    }
   }
 
   .page-header {
@@ -77,3 +112,4 @@
     padding-top: 0;
   }
 }
+

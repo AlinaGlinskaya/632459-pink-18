@@ -13,19 +13,33 @@
   width: 90px;
   height: 68px;
 
-
-  background-image: url("../../img/icon-menu-cross.svg");
-  background-repeat: no-repeat;
-  background-position: center right 19px;
   background-color: transparent;
+
   border: none;
 
   cursor: pointer;
 }
 
-.main-nav--closed .main-nav__toggle {
-  background-image: url("../../img/icon-menu-burger.svg");
-  background-position: center;
+.main-nav__toggle-icon {
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #d22856;
+    opacity: 0.3;
+  }
+}
+
+.main-nav__toggle-icon--burger {
+  display: none;
+}
+
+.main-nav--closed .main-nav__toggle-icon--cross {
+  display: none;
+}
+.main-nav--closed .main-nav__toggle-icon--burger {
+  display: inline-block;
 }
 
 .main-nav .site-list {
