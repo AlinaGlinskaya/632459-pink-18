@@ -1,3 +1,157 @@
 .modal {
   display: none;
 }
+
+.modal-block {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+
+  transform: translateX(-50%);
+
+  width: 320px;
+
+  text-align: center;
+  line-height: 24px;
+  color: #283645;
+
+  background-color: #ffffff;
+
+  &--error {
+    height: 289px;
+  }
+
+  &--approve {
+    height: 380px;
+
+    & .modal__button-wrapper {
+      height: 180px;
+      margin-top: 30px;
+      padding-top: 47px;
+
+      background-color: #f2f2f2;
+    }
+  }
+}
+
+.modal__title {
+  padding: 24px 10px 12px;
+
+  font-size: 18px;
+  color: #000000;
+}
+
+.modal__button {
+  width: 100%;
+  padding: 18px 0;
+
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+
+  background-color: #2aab6d;
+  border: none;
+}
+
+.modal__button-wrapper {
+  padding: 0 20px;
+  margin-top: 37px;
+}
+
+.modal-block--approve .modal__message {
+  padding: 0 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-block {
+    width: 460px;
+
+    font-size: 18px;
+    line-height: 24px;
+
+    &--approve {
+      height: 432px;
+
+      & .modal__message {
+        padding: 0 30px;
+        width: 380px;
+        margin: 0 auto;
+      }
+    }
+
+    &--error {
+      height: 363px;
+
+      & .modal__message {
+        width: 300px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .modal__title {
+    width: 350px;
+    margin: 20px auto 11px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__button {
+    width: 295px;
+    margin: 0 auto;
+  }
+
+  .modal-block--error .modal__title {
+    width: 250px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+.modal-block {
+  width: 780px;
+  height: 377px;
+  }
+
+  .modal-block--error {
+    & .modal__title {
+      width: 600px;
+    }
+
+    & .modal__message {
+      width: 400px;
+      margin-bottom: 63px;
+    }
+  }
+
+  .modal__button-wrapper {
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    background-color: #f2f2f2;
+  }
+
+  .modal-block--approve {
+    & .modal__title {
+      width: 600px;
+    }
+
+    & .modal__message {
+      width: 500px;
+      margin-bottom: 38px;
+    }
+
+    & .modal__button {
+      width: 456px;
+    }
+
+    & .modal__button-wrapper {
+      height: 160px;
+    }
+  }
+}

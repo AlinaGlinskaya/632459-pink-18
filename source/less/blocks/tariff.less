@@ -38,6 +38,28 @@
   display: none;
 }
 
+.tariff__name--hit {
+  position: relative;
+}
+
+.tariff__hit {
+  display: block;
+  transform: translateX(-8px) translateY(10px) rotate(-45deg);
+
+  font-weight: normal;
+}
+
+.tariff__label {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+
+  width: 70px;
+  height: 70px;
+
+  background-image: url(../../img/hit-ribbon.png);
+}
 
 .tariff__cell {
   padding: 14px 40px;
@@ -60,6 +82,29 @@
 
   &--no {
     fill: #f25b26;
+  }
+}
+
+.tariff__table-wrapper {
+  position: relative;
+  z-index: 0;
+
+  padding-top: 90px;
+
+  background-image: linear-gradient(to bottom, #ffffff 50%, #f2f2f2 50%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    background-color: #f2f2f2;
+
+    transform: skewY(-6deg);
   }
 }
 
@@ -86,12 +131,6 @@
 
   .tariff__price {
     font-size: 18px;
-  }
-
-  .tariff__table-wrapper {
-    padding: 100px 0;
-
-    background-color: #f2f2f2;
   }
 
   .tariff__table td:first-child {
