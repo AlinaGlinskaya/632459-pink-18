@@ -1,5 +1,4 @@
 .photo-list {
-  margin: 0;
   padding: 0;
   margin-top: 40px;
 
@@ -11,33 +10,27 @@
   margin: 0 auto;
   width: 100%;
   height: auto;
+  object-fit: cover;
+  object-position: center;
 
   &--of-day {
     height: 137px;
   }
 }
 
-.photo-list__item--of-day::after {
-  content: "Панорама дня";
+.photo__panorama-label {
+  align-self: flex-end;
+  margin: 0 0 100px;
+  padding: 13px 20px 10px;
 
-  position: absolute;
-  top: 0;
-  right: 20px;
-
-  width: 140px;
-  height: 36px;
-  padding-top: 11px;
-
-  color: #ffffff;
+  font-weight: 700;
   text-transform: uppercase;
+  color: #ffffff;
   font-size: 12px;
   line-height: 14px;
-  font-weight: bold;
-  text-align: center;
 
   background-color: #d22856;
 }
-
 
 .photo > div {
   position: relative;
@@ -49,10 +42,6 @@
   margin-bottom: 20px;
   padding: 0 10px;
   min-height: 300px;
-
-  &--of-day {
-    padding-top: 139px;
-  }
 }
 
 .photo-list__item--of-day > a {
@@ -60,9 +49,7 @@
   top: 0;
   left: 0;
   right: 0;
-
-  display: block;
-  width: 100%;
+  z-index: -1;
 }
 
 .photo-list__item:first-child .photo__caption {
@@ -89,26 +76,15 @@
 
 .photo__likes {
   display: block;
-  position: relative;
-  padding-left: 32px;
   margin-top: auto;
 
   font-size: 12px;
   text-decoration: none;
   color: #d43560;
   text-transform: uppercase;
-
-  &::before {
-    content: url("../../img/icon-heart.svg");
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 0;
-    left: 1px;
-  }
 }
 
-.photo-description {
+.photo__description {
   margin: 0 auto;
   padding: 30px 35px 48px 35px;
 
@@ -133,7 +109,6 @@
     &--of-day {
       min-width: 620px;
       margin: 0 auto;
-      padding-top: 505px;
     }
   }
 
@@ -147,7 +122,7 @@
     margin-top: 20px;
   }
 
-  .photo-description {
+  .photo__description {
     margin-bottom: 50px;
     margin-top: 60px;
     padding: 30px 50px 26px 50px;
@@ -165,6 +140,11 @@
 
   .photo-list__item:first-child .photo__caption {
     padding: 16px 26px;
+  }
+
+  .photo__panorama-label {
+    margin-top: 56px;
+    margin-bottom: 416px;
   }
 }
 
@@ -191,5 +171,9 @@
   .photo-list__img {
     height: 400px;
     object-fit: cover;
+  }
+
+  .photo__panorama-label {
+    margin-top: 53px;
   }
 }

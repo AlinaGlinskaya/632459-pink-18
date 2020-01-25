@@ -2,9 +2,10 @@
   margin-top: 88px;
 }
 
-.contacts__map {
+.contacts__map-image {
   display: block;
   margin: 0 auto;
+  width: 100%;
 }
 
 .contacts__slogan {
@@ -49,6 +50,19 @@
   text-decoration: none;
 }
 
+.contacts__map {
+  position: relative;
+}
+
+.contacts__map-triangle {
+  position: absolute;
+  top: 0;
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: @tablet-width) {
   .contacts__slogan {
     width: 500px;
@@ -65,11 +79,6 @@
 
   .contacts__item {
     width: 285px;
-  }
-
-  .contacts__map {
-    width: 660px;
-    height: 848px;
   }
 
   .contacts__text {
@@ -104,10 +113,8 @@
     margin-top: 20px;
   }
 
-  .contacts__map {
-    width: 100%;
+  .contacts__map-image {
     max-width: 1200px;
-    height: 976px;
     margin: 0 auto;
   }
 }

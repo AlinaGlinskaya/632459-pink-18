@@ -97,6 +97,10 @@
   .tariff__table td:first-child {
     background-color: #f2f2f2;
   }
+
+  .tariff .toggle-list {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -112,18 +116,25 @@
 
 @media (max-width: @mobile-width-only) {
   .tariff__table {
-    width: 300%;
+    width: 100%;
 
     text-transform: uppercase;
   }
 
-  .tariff__table-wrapper {
+  .tariff__table-viewport {
     overflow: auto;
+  }
+
+  .tariff__table-wrapper {
+    display: inline-block;
+    width: calc(300% - 120px);
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .tariff__cell {
     position: relative;
-    width: calc(100% - 44px);
+    width: 100%;
   }
 
   .tariff__options {
@@ -141,6 +152,11 @@
   .tariff__toggle {
     display: block;
     margin: 40px auto 37px;
+  }
+
+  .tariff .toggle-list {
+    position: relative;
+    left: 90%;
   }
 
   .tariff__icon {
