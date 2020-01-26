@@ -27,15 +27,16 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.page-header__logo-image {
-  &:hover {
+.page-header__logo {
+  &:hover .page-header__logo-image {
     fill: #d22856;
   }
 
-  &:active {
+  &:active .page-header__logo-image {
     opacity: 0.3;
   }
 }
+
 @media (min-width: @tablet-width) {
   .page-header__logo {
     padding: 12px 19px;

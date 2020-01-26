@@ -63,6 +63,12 @@
   height: auto;
 }
 
+.contacts__map-marker {
+  position: absolute;
+  left: 50%;
+  bottom: 11%;
+}
+
 @media (min-width: @tablet-width) {
   .contacts__slogan {
     width: 500px;
@@ -94,6 +100,10 @@
   .contacts__item:last-child {
     margin-top: 20px;
   }
+
+  .contacts__map-marker {
+    bottom: 30%;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -116,5 +126,9 @@
   .contacts__map-image {
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .contacts__map-marker {
+    bottom: 40%;
   }
 }
