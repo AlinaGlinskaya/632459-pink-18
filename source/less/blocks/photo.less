@@ -127,7 +127,11 @@
   .photo-list__item--of-day .photo__likes {
     order: -1;
     margin-left: auto;
-    margin-top: 20px;
+    margin-top: -20px;
+
+    & span {
+      margin-right: 15px;
+    }
   }
 
   .photo__description {
@@ -153,6 +157,15 @@
   .photo__panorama-label {
     margin-top: 56px;
     margin-bottom: 416px;
+  }
+
+  .photo__comment-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    & > div {
+      order: -1;
+    }
   }
 }
 
