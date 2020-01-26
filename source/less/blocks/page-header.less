@@ -28,11 +28,14 @@
 }
 
 .page-header__logo {
+  fill: #ffffff;
+
   &:hover .page-header__logo-image {
     fill: #d22856;
   }
 
   &:active .page-header__logo-image {
+    fill: #ffffff;
     opacity: 0.3;
   }
 }
@@ -55,12 +58,18 @@
     width: 147px;
     height: 40px;
 
+    fill: #ffffff;
+
     &--mobile {
       display: none;
     }
 
     &--tablet {
       display: block;
+
+      &:hover {
+        fill: #d22856;
+      }
     }
   }
 
