@@ -56,6 +56,16 @@
   &--submit {
     color: #d22856;
     border: 3px solid #d22856;
+
+    &:hover {
+      background-color: #d22856;
+      color: #ffffff;
+    }
+
+    &:active {
+      background-color: #d22856;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   &--reset {
@@ -63,7 +73,21 @@
 
     background-color: #f2f2f2;
     border: 3px solid #dddfe0;
+
+
+    &:hover {
+    border: 3px solid rgba(40, 54, 69, 0.3);
+    color: rgba(40, 54, 69, 0.3);
   }
+
+    &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: rgba(40, 54, 69, 0.3);
+    border: rgba(40, 54, 69, 0.3);
+
+  }
+}
 }
 
 .posting__buttons {
@@ -100,6 +124,10 @@
   background-color: #ffffff;
 
   cursor: pointer;
+
+  &--active {
+    background-color: #d22856;
+  }
 }
 
 .posting__controls {
@@ -114,6 +142,11 @@
   &--active {
     fill: #d22856;
     opacity: 1;
+  }
+
+  &:hover {
+    fill: #283645;
+    opacity: 0.5;
   }
 }
 

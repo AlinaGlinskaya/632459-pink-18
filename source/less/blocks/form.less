@@ -87,10 +87,23 @@
 
   background-color: #2aab6d;
   border: none;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .form-contest__buttons {
   margin-top: 47px;
+
+  & button:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .form-contest__contacts legend {
@@ -140,6 +153,14 @@
   background-color: #d22856;
 }
 
+.form-contest__app input:hover + label::before {
+    border: 2px solid #283645;
+  }
+
+  .form-contest__app input:active + label::before {
+    border: 2px solid #d22856;
+  }
+
 .form-contest__item {
   margin: 0 10px 16px 10px;
 }
@@ -165,8 +186,18 @@
   padding-left: 0;
 }
 
-.form-contest__achievements input:checked + .form-contest__icon-yes {
+.form-contest__achievements input:checked + label span svg {
   display: block;
+}
+
+.form-contest__input {
+  &:hover {
+    border: 2px solid #283645;
+  }
+
+  &:active {
+    border: 2px solid #d22856;
+  }
 }
 
 .form-contest__icon-yes {
@@ -176,6 +207,16 @@
   display: none;
 
   fill: #d22856;
+}
+
+.form-contest input {
+  &:hover {
+    border: 2px solid #283645;
+  }
+
+  &:active {
+    border: 2px solid #d22856;
+  }
 }
 
 @media (min-width: @tablet-width) {
