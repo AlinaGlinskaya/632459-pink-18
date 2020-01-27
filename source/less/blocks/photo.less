@@ -192,7 +192,7 @@
   .photo-list__item {
     width: 320px;
     flex: 0 1 auto;
-    margin: 0 0 20px;
+    margin: 0 0 55px;
 
     &--of-day {
       width: 960px;
@@ -211,11 +211,37 @@
 
   .photo__panorama-label {
     margin-top: 53px;
+    padding: 12px 10px 11px 18px;
   }
 
   .photo__description {
     width: 715px;
-    padding: 34px 55px 26px 50px;
+    padding: 33px 54px 26px 50px;
     margin-bottom: 62px;
+  }
+
+  .photo-list__item:first-child .photo__caption {
+    padding: 24px 10px 13px 27px;
+  }
+
+  .photo__comment-wrapper > div {
+    margin-bottom: -5px;
+  }
+
+  .photo-list__item:first-child .photo__likes span {
+    margin-right: 20px;
+  }
+
+  .photo-list__item:first-child {
+    margin-bottom: 50px;
+  }
+
+  .photo__caption {
+    padding: 23px 14px 21px 27px;
+    min-height: 155px;
+  }
+
+  .photo-list__item:nth-child(n+5) {
+    margin-bottom: 30px;
   }
 }
