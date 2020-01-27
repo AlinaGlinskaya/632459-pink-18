@@ -1,6 +1,6 @@
 .photo-list {
   padding: 0;
-  margin-top: 40px;
+  margin: 0;
 
   list-style: none;
 }
@@ -20,8 +20,9 @@
 
 .photo__panorama-label {
   align-self: flex-end;
-  margin: 0 0 100px;
-  padding: 13px 20px 10px;
+  margin: 0 0 102px;
+  padding: 10px 10px 11px 16px;
+  width: 140px;
 
   font-weight: 700;
   text-transform: uppercase;
@@ -40,7 +41,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  padding: 0 10px;
+  padding: 0 20px;
   min-height: 300px;
 }
 
@@ -53,7 +54,7 @@
 }
 
 .photo-list__item:first-child .photo__caption {
-  padding: 16px 17px;
+  padding: 20px 28px;
 }
 
 .photo__date {
@@ -79,6 +80,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
+  width: 121px;
 
   font-size: 12px;
   text-decoration: none;
@@ -87,7 +89,8 @@
 }
 
 .photo__likes-icon {
-  margin-right: 20px;
+  margin-right: 0;
+  order: -1;
 
   fill: #d22856;
 }
@@ -109,10 +112,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 0 10px;
   }
 
   .photo-list__item {
     flex: 1 0 40%;
+    padding: 0 10px;
 
     &--of-day {
       min-width: 620px;
@@ -142,6 +147,15 @@
     font-size: 18px;
   }
 
+  .photo__likes-icon {
+    order: 2;
+    margin-right: 20px;
+  }
+
+  .photo__likes {
+    width: auto;
+  }
+
   .photo-list__img--of-day {
     height: 509px;
   }
@@ -151,12 +165,12 @@
   }
 
   .photo-list__item:first-child .photo__caption {
-    padding: 16px 26px;
+    padding: 27px 26px;
   }
 
   .photo__panorama-label {
     margin-top: 56px;
-    margin-bottom: 416px;
+    margin-bottom: 418px;
   }
 
   .photo__comment-wrapper {
@@ -176,17 +190,18 @@
   }
 
   .photo-list__item {
-    width: 300px;
+    width: 320px;
     flex: 0 1 auto;
     margin: 0 0 20px;
 
     &--of-day {
-      width: 940px;
+      width: 960px;
     }
   }
 
   .photo-list {
     padding: 0;
+    margin: 0 auto;
   }
 
   .photo-list__img {
@@ -196,5 +211,11 @@
 
   .photo__panorama-label {
     margin-top: 53px;
+  }
+
+  .photo__description {
+    width: 715px;
+    padding: 34px 55px 26px 50px;
+    margin-bottom: 62px;
   }
 }
