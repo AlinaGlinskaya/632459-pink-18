@@ -627,14 +627,14 @@ html {
 }
 .download__wrapper {
   padding-top: 112px;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #283645;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .download__wrapper {
-    background-image: url("../../img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
 .download__slogan {
@@ -712,24 +712,24 @@ html {
   background-size: contain;
 }
 .download__link--ios {
-  background-image: url("../../img/logo-apple.svg");
+  background-image: url("../img/logo-apple.svg");
   width: 47px;
   height: 56px;
 }
 .download__link--android {
-  background-image: url("../../img/logo-android.svg");
+  background-image: url("../img/logo-android.svg");
   width: 42px;
   height: 48px;
 }
 .download__link--windows {
-  background-image: url("../../img/logo-microsoft.svg");
+  background-image: url("../img/logo-microsoft.svg");
   width: 44px;
   height: 46px;
 }
 @media (min-width: 660px) {
   .download__wrapper {
     padding-bottom: 110px;
-    background: url("../../img/bg-back-tablet@1x.jpg") no-repeat cover;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat cover;
   }
   .download__description {
     position: relative;
@@ -784,14 +784,14 @@ html {
 }
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .download__wrapper {
-    background-image: url("../../img/bg-back-tablet@2x.jpg");
+    background-image: url("../img/bg-back-tablet@2x.jpg");
   }
 }
 @media (min-width: 960px) {
   .download__wrapper {
     padding-top: 212px;
     padding-bottom: 18px;
-    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -851,7 +851,7 @@ html {
 }
 @media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 1.5dppx) {
   .download__wrapper {
-    background-image: url("../../img/bg-back-desktop@2x.jpg");
+    background-image: url("../img/bg-back-desktop@2x.jpg");
   }
 }
 .features {
@@ -1652,7 +1652,7 @@ html {
   left: 0;
   width: 70px;
   height: 70px;
-  background-image: url(../../img/hit-ribbon.png);
+  background-image: url(../img/hit-ribbon.png);
 }
 .tariff__cell {
   padding: 14px 40px;
@@ -2788,13 +2788,13 @@ html {
   z-index: -1;
   margin-top: -110px;
   padding-top: 110px;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .page-title__wrapper {
-    background-image: url("../../img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
 @media (min-width: 660px) {
@@ -2805,18 +2805,18 @@ html {
     line-height: 61px;
   }
   .page-title__wrapper {
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 }
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .page-title__wrapper {
-    background-image: url("../../img/bg-back-tablet@2x.jpg");
+    background-image: url("../img/bg-back-tablet@2x.jpg");
   }
 }
 @media (min-width: 960px) {
   .page-title__wrapper {
     margin-top: -110px;
-    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -2832,7 +2832,7 @@ html {
 }
 @media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 1.5dppx) {
   .page-title__wrapper {
-    background-image: url("../../img/bg-back-desktop@2x.jpg");
+    background-image: url("../img/bg-back-desktop@2x.jpg");
   }
 }
 .research {
