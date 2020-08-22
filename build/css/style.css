@@ -1907,6 +1907,12 @@ html {
   background-color: transparent;
   border: none;
 }
+.posting__item:focus {
+  outline: none;
+}
+.posting__item:active {
+  outline: none;
+}
 .posting__button {
   width: 280px;
   margin-left: auto;
@@ -2065,7 +2071,7 @@ html {
     height: 22px;
   }
   .posting__item-icon--brightness {
-    width: 16px;
+    width: 12px;
     height: 16px;
   }
   .posting__buttons {
@@ -2143,7 +2149,7 @@ html {
     height: 43px;
   }
   .posting__item-icon--brightness {
-    width: 32px;
+    width: 45px;
     height: 32px;
   }
 }
