@@ -1213,6 +1213,11 @@ html {
 .site-developer__text {
   display: block;
 }
+@media (min-width: 960px) {
+  .site-developer__text {
+    padding-top: 5px;
+  }
+}
 .site-developer__link {
   display: block;
   width: 40px;
